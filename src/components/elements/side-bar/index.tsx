@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faUserCircle, faPaste, faGear, faSignOutAlt } from '@fortawesome/free-solid-svg-icons';
+import { faUserCircle, faGear, faSignOutAlt, faPersonChalkboard, faBook } from '@fortawesome/free-solid-svg-icons';
 import { routes } from '@/configs/routers';
 import classNames from 'classnames/bind';
 import styles from '@/components/elements/side-bar/Sidebar.module.scss';
@@ -9,9 +9,14 @@ import { useState } from 'react';
 
 const sidebarItem = [
   {
-    icon: faPaste,
-    text: 'Project',
+    icon: faPersonChalkboard,
+    text: 'Document',
     to: routes.lesson,
+  },
+  {
+    icon: faBook,
+    text: 'Word',
+    to: routes.newWord,
   },
 ];
 

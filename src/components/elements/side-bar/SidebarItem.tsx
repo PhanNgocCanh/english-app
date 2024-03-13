@@ -19,7 +19,7 @@ export const SidebarItem: React.FC<Props> = props => {
   return (
     <Link to={to}>
       <li
-        className={`list-none border-l-2 border-transparent text-center text-2xl py-2 relative group ease-in duration-500
+        className={`w-full list-none border-l-2 border-transparent text-center text-2xl py-2 relative group ease-in duration-500
             hover:cursor-pointer
             ${active ? cx('active') : ''}`}
         onClick={onClick}>

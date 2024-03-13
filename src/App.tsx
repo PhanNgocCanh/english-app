@@ -1,9 +1,11 @@
-import './App.css';
+import { RouterProvider } from 'react-router-dom';
+import '@/App.css';
+import { router } from '@/routers';
 
 function App() {
   return (
     <>
-      <div className="text-red-600">Tailwind css</div>
+      <RouterProvider router={router} />
     </>
   );
 }
